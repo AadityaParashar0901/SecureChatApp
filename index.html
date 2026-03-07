@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=chat,left_panel_close,left_panel_open,logout,search,send,settings" />
+		<title>Secure Chat App</title>
+	</head>
+	<body class="flex center">
+		<div class="flex column gap-2" id="navigation-bar">
+			<div class="flex center">
+				<div class="img-button" onClick="toggleChatDrawer()">
+					<span class="material-symbols-outlined" id="drawer_span">left_panel_close</span>
+				</div>
+			</div>
+			<div class="flex column center" style="flex: 1;">
+				<div class="img-button">
+					<span class="material-symbols-outlined">chat</span>
+					<span>Chats</span>
+				</div>
+				<div class="img-button">
+					<span class="material-symbols-outlined">settings</span>
+					<span>Settings</span>
+				</div>
+				<div class="img-button">
+					<span class="material-symbols-outlined">logout</span>
+					<span>Log Out</span>
+				</div>
+			</div>
+		</div>
+		<div class="padded-flex column center gap-2" id="chats-list-pane">
+			<div class="flex center bordered" id="chats-search">
+				<input type="text" id="chat-search" placeholder="Search" />
+				<button><span class="material-symbols-outlined">search</span></button>
+			</div>
+			<div class="flex vertical-center" id="chats-list">
+				<ul class="flex column">
+				</ul>
+			</div>
+		</div>
+		<div class="flex column center" id="chat-pane">
+			<div class="flex center" id="chat-history">
+				<ul class="flex column">
+				</ul>
+			</div>
+			<div class="flex center" id="chat-message-area">
+				<input type="text" placeholder="Enter a Message" />
+				<button><span class="material-symbols-outlined">send</span></button>
+			</div>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>

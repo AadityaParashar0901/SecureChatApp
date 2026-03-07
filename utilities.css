@@ -1,0 +1,29 @@
+.flex {
+	display: flex;
+}
+.padded-flex {
+	display: flex;
+	padding: 8px;
+}
+.column {
+	flex-direction: column;
+}
+.vertical-center {
+	justify-content: center;
+}
+.center {
+	align-items: center;
+	justify-content: center;
+}
+.gap-1 {
+	gap: 1%;
+}
+.gap-2 {
+	gap: 2%;
+}
+.gap-5 {
+	gap: 5%;
+}
+.bordered {
+	border: 1px solid var(--accent-color-a);
+}
