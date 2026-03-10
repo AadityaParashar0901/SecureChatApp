@@ -1,35 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="login.css">
-    <title>Login page</title>
-
-</head>
-<body class="login-page">
-
-    <div class="contain">
-    <h1 class="login-h1">SecureChat</h1>
-
-    <form action="#" class="form">
-    <div class="fdesign" id="logininput">
-        <input type="text" id="flogin" name="flogin" placeholder="Email address,mobile number or username "><br>
-        <span class="ferror"></span>
-    </div>
-
-    <div class="fdesign" id="pass">
-        <input type="password" id="password" name="password" placeholder="Password"><br>
-        <span class="ferror"></span>
-    </div>
-
-    <input class="btn" type="submit" value="Log in">
-    </form>
-
-    <button type="button" class="btn" onclick="window.location.href='forgotPassword.html'">Forgotten password?</button><br>
-
-    <button type="button" class="create-btn" onclick="window.location.href='SignUp.html'">Create new account</button> 
-</div>
-
-</body>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="utilities.css">
+		<link rel="stylesheet" href="login.css">
+		<title>Login page</title>
+	</head>
+	<body class="flex center login-page">
+		<div class="login-form border">
+			<h1 class="login-h1">SecureChat</h1>
+			<form action="#">
+				<div class="flex center bordered fdesign" id="logininput">
+					<input type="text" id="flogin" name="flogin" placeholder="Email address, Mobile number or Username"><br>
+					<span class="ferror"></span>
+				</div>
+				<div class="flex center bordered fdesign" id="pass">
+					<input type="password" id="password" name="password" placeholder="Password"><br>
+					<span class="ferror"></span>
+				</div>
+				<button class="btn" type="submit">Log In</button>
+			</form>
+			<button class="btn" onclick="window.location.href='forgotPassword.html'">Forgotten password?</button><br>
+			<button class="create-btn" onclick="window.location.href='SignUp.html'">Create new account</button> 
+		</div>
+	</body>
 </html>
