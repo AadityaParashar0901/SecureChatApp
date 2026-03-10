@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.login-page{
+    background-color: #fafafa;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.contain{
+    width: 350px;
+    background-color: #ffffff;
+    border: 1px solid #dbdbdb;
+    padding: 40px 40px 20px 40px;
+    text-align: center;
+}
+
+.login-h1{
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    font-style:oblique;
+}
+
+.fdesign{
+    margin-bottom: 10px;   
+}
+
+.fdesign input{
+    width: 100%;
+    padding: 10px;
+    background-color: #fafafa;
+    border: 1px solid #dbdbdb;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.btn{
+    width: 100%;
+    background-color: #9981d7;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 14px;
+    margin-top: 15px;   
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: #6840a3;
+}
+
+.create-btn{
+    width: 100%;
+    background: none;
+    border: none;
+    color: #533485;
+    font-size: 14px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+/* for signup */
+.signup-page{
+    background-color: #fafafa;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container{
+    width: 380px;
+    background-color: #ffffff;
+    border: 1px solid #dbdbdb;
+    padding: 40px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.signup-heading{
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.signup-h4{
+    font-size: 14px;
+    font-weight: 500;
+    color: #737373;
+    margin-bottom: 25px;
+}
+
+.formdesign{
+    margin-bottom: 6px;
+    text-align: left;
+}
+
+.formdesign label{
+    font-size: 15px;
+    font-weight: 500;
+    display: block;
+    margin-top: 20px;
+}
+
+.formdesign input{
+    width: 100%;
+    padding: 10px;
+    background-color: #fafafa;
+    border: 1px solid #dbdbdb;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+    margin-bottom: 7px;
+}
+
+.formdesign input:focus{
+    outline: none;
+    border: 1px solid #a8a8a8;
+    background-color: #ffffff;
+}
+
+.formerror{
+    color: #ed4956;
+    font-size: 12px;
+    margin-top: 4px;
+    display: block;
+}
+
+.button{
+    width: 100%;
+    background-color: #533485;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 14px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: #533485;
+}
+
+br{
+    display: none;
+}
