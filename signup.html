@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>signup page</title>
+
+</head>
+<body class="login-page">
+
+    <div class="container">
+        
+    <h1 class="signup-heading">Get started on WebChat</h1>
+    <h4 class="signup-h4">Sign up</h4>
+
+    <form name="myform" onsubmit="return validateform()">
+    <!-- <div class="formdesign" id="number">
+        <label for="fnumber">Mobile number</label><br>
+        <input type="tel" id="fnumber" name="fnumber" placeholder="Mobile number"><br>
+        <span class="formerror"></span>
+    </div> -->
+
+    <div class="formdesign" id="logininput">
+        <label for="flogin">Email address or mobile number</label><br>
+        <input type="text" id="flogin" name="flogin" placeholder="Email address or mobile number"><br>
+        <span class="formerror"></span>
+    </div>
+
+    <div class="formdesign" id="pass">
+        <label for="fpass">Password</label>
+        <br>
+        <input type="password" id="fpass" name="fpass" placeholder="Password"><br>
+        <span class="formerror"></span>
+    </div>
+
+    <div class="formdesign" id="dob">
+        <label for="fdob">Date of birth</label><br>
+        <input type="date" id="fdob" name="fdob" placeholder=""><br>
+        <span class="formerror"></span>
+    </div>
+
+    <div class="formdesign" id="name">
+        <label for="fname">Name</label><br>
+        <input type="text" id="fname" name="fname" placeholder="Full name"><br>
+         <span class="formerror"></span>
+    </div>
+
+    <div class="formdesign" id="username">
+        <label for="fusername">Username</label><br>
+        <input type="text" id="fusername" name="fusername" placeholder="Username"><br>
+        <span class="formerror"></span>
+    </div>
+
+    <input class="button" type="submit" value="Submit">
+
+    </form>
+    </div>
+
+    <script>
+    function clearErrors(){
+        errors = document.getElementsByClassName('formerror');
+        for(let item of errors){
+        item.innerHTML = "";
+        }
+    }
+
+    function seterror(id,error){
+        var element = document.getElementById(id);
+        element.getElementsByClassName('formerror')[0].innerHTML = error;
+    }
+
+    function validateform(){
+    var returnval = true;
+    clearErrors();
+
+    var username = document.forms['myform']["fusername"].value;
+    if(username.length == 0){
+        seterror("username","*Please select a username for your account");
+        returnval = false;  
+    }
+
+    var input = document.forms['myform']["flogin"].value;
+    var mobileRegex = /^\d{10}$/; 
+    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (!(mobileRegex.test(input) || emailRegex.test(input))) {
+        seterror("logininput", "*Enter a valid email address or mobile number");
+        returnval = false;
+    }
+
+    var password = document.forms['myform']["fpass"].value;
+    var passwordRegex = /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*?&]).{6,15}$/;
+
+    if(!passwordRegex.test(password)){
+        seterror("pass", "*Password must be 6-15 characters with letter, number & special character");
+        returnval = false;
+    }
+
+    return returnval;
+}
+    </script>
+</body>
+</html>
